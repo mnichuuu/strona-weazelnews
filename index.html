@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weazel News</title>
+    <style>
+        body {
+            font-family: 'Anton';font-size: 16px;
+            background-color: #0d1026;
+            color: white;
+            margin: 0;
+            padding: 0;
+            background-image: url('twoje-background.jpg'); /* Tutaj wstaw ścieżkę do swojego tła */
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.89); /* Przezroczysty pasek nagłówka */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 60px; /* Wysokość logo Weazel News */
+            margin-left: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: rgb(175, 172, 172);
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .banner {
+            background-color: rgba(0, 0, 0, 0); /* Przezroczystość na tle zdjęcia */
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .banner h2 {
+            font-size: 2.5em;
+            color: white;
+            background-color: rgba(0, 0, 0, 0);
+            padding: 10px 20px;
+        }
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #f1f1f1;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+        .stats div {
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            margin: 10px;
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #000000e3;
+            padding: 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo-weazel.png" alt="Weazel News Logo"> <!-- Ścieżka do logo -->
+        <h1>Weazel News</h1>
+        <nav>
+            <a href="#news">Strona Główna</a>
+            <a href="#about">O nas</a>
+            <a href="#gallery">Galeria</a>
+            <a href="#rekrutacja">Rekrutacja</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>Najświeższe wiadomości z BoarRP</h2>
+    </section>
+
+    <section id="news" class="content">
+        <div class="section-title">Najnowsze wiadomości</div>
+        <p>Tutaj będą się pojawiały najnowsze informacje z serwera BoarRP, nasze reportaże, analizy i relacje na żywo z wydarzeń w grze.</p>
+    </section>
+
+    <section id="about" class="content">
+        <div class="section-title">O nas</div>
+        <p>Jesteśmy zespołem reporterów Weazel News działającym na serwerze BoarRP od 12 lat. Naszym celem jest dostarczanie rzetelnych i aktualnych wiadomości z gry, relacjonowanie wydarzeń na żywo oraz tworzenie materiałów, które budują społeczność.</p>
+        <div class="stats">
+            <div>
+                <strong>4350</strong>
+                <p>Zadowolonych klientów</p>
+            </div>
+            <div>
+                <strong>8</strong>
+                <p>Lat doświadczenia</p>
+            </div>
+            <div>
+                <strong>33</strong>
+                <p>Specjalistów</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="content">
+        <div class="section-title">Galeria</div>
+        <div class="gallery">
+            <img src="zdjecie1.jpg" alt="Zdjęcie 1">
+            <img src="zdjecie2.jpg" alt="Zdjęcie 2">
+            <img src="zdjecie3.jpg" alt="Zdjęcie 3">
+            <img src="zdjecie4.jpg" alt="Zdjęcie 4">
+        </div>
+    </section>
+
+    <section id="rekrutacja" class="content">
+        <div class="section-title">Rekrutacja</div>
+        <p>Chcesz dołączyć do naszego zespołu? Kliknij poniżej, aby wypełnić formularz rekrutacyjny!</p>
+        <a href="https://forms.gle/9UKbu31bmC7gFNCY7" target="_blank" style="color: #f15151;">Formularz Rekrutacyjny</a>
+    </section>
+
+    <section id="kontakt" class="content">
+        <div class="section-title">Kontakt</div>
+        <p>Masz pytania? Skontaktuj się z nami bezpośrednio przez discord:</p>
+        <a href="https://discord.gg/RGS7fWDG" style="color: #f15151;">Discord</a>
+    </section>
+
+    <footer>
+        <p>&copy; powered by discord.gg/boarrp</p>
+    </footer>
+</body>
+</html>
